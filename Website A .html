@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial;}
+
+
+/* Style the tab */
+.tab {
+overflow: hidden;
+background-color:inherit;
+}
+
+
+/* Style the buttons inside the tab */
+.tab button {
+background-color: inherit;
+float: left;
+border: none;
+outline: none;
+color:white;
+cursor: pointer;
+padding: 14px 16px;
+transition: 0.4s;
+font-size: 17px;
+}
+
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+background-color:transparent-hover;
+}
+
+
+/* Create an active/current tablink class */
+.tab button.active {
+text-decoration: underline;
+text-decoration-thickness: 3px;
+text-decoration-color: aqua;
+display:inline-block;
+}
+
+
+/* Style the tab content */
+.tabcontent {
+display: none;
+padding: 6px 12px;
+border-top: none;
+}
+</style>
+</head>
+<body>
+
+
+<div class="tab">
+<button class="tablinks" onclick="openCity(event, 'Bronx')"><h1 class="finlor1">finlor.</h1></button>
+<button class="tablinks" onclick="openCity(event, 'London')">Home</button>
+<button class="tablinks" onclick="openCity(event, 'Paris')">About Us </button>
+<button class="tablinks" onclick="openCity(event, 'Tokyo')">Services</button>
+<button class="tablinks" onclick="openCity(event, 'Ohio')">Worth With US</button>
+<button class="tablinks" onclick="openCity(event, 'New York')">Sustanability</button>
+<button class="tablinks" onclick="openCity(event, 'Brooklyn')">Blog</button>
+<button class="tablinks" onclick="openCity(event, 'Jamaica')">Contact</button>
+<button class="tablinks" onclick="openCity(event, 'Japan')">01908 686814</button>
+</div>
+
+
+<div id="London" class="tabcontent">
+<h1 class="Textstuff"><strong>Safe and Reliable
+Logistics Solutions</strong></h1>
+
+
+<h2 class="FontThings">Going the extra mile for you</h2>
+
+
+<div class="b">
+<p class="Textstuff2"style="text-align:center/left/right;">A 21st-century logistics company delivering 21st-century solutions. Finlor provide end-to-end supply chain solutions and last-mile delivery capabilities in the retail, hi-tech and logistics sectors.
+You can rely on us for all your delivery and transport requirements. With unrivalled customer service, we can tailor a solution that perfectly fits your needs.
+</p></div>
+
+
+
+
+<button class="subscribe-button">
+CONTACT US</button>
+
+
+<style>
+.finlor1{
+font-family:Abril Fatface;
+font-size: 55px;
+}
+div.b {
+text-align: left;
+}
+
+
+</style>
+
+
+<style>
+.Textstuff2{
+color:white;
+font-size: 20px;
+font-family:Inria Serif;
+}
+
+
+.Textstuff{
+color:white;
+font-size:45px;
+}
+
+
+.FontThings{
+color:aqua;
+}
+
+
+body{background-image:url("https://th.bing.com/th/id/OIP.-Z5GcsBddzZPLLpfGVLo7wHaEo?w=281&h=180&c=7&r=0&o=5&dpr=1.2&pid=1.7");
+background-repeat: no-repeat;
+background-size: cover;}
+
+
+.subscribe-button {
+background-color: aqua;
+color: rgb(0, 0, 0);
+border: none;
+height: 36px;
+width: 100px;
+border-radius: 50px;
+border-radius: 18px;
+font-size: 12px;
+cursor: pointer;
+margin-left: 10px;
+}
+</style>
+
+<body>
+
+
+</div>
+
+
+<div id="Paris" class="tabcontent">
+=
+</div>
+
+
+<div id="Tokyo" class="tabcontent">
+</div>
+
+
+<script>
+function openCity(evt, cityName) {
+var i, tabcontent, tablinks;
+tabcontent = document.getElementsByClassName("tabcontent");
+for (i = 0; i < tabcontent.length; i++) {
+tabcontent[i].style.display = "none";
+}
+tablinks = document.getElementsByClassName("tablinks");
+for (i = 0; i < tablinks.length; i++) {
+tablinks[i].className = tablinks[i].className.replace(" active", "");
+}
+document.getElementById(cityName).style.display = "block";
+evt.currentTarget.className += " active";
+}
+</script>
+</html>
+</body>
